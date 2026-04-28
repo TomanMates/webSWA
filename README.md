@@ -1,4 +1,4 @@
-# Dokumentace projektu: Cestovatelský Plánovač
+#Cestovatelský Plánovač
 
 **Autor:** Matěj Toman 
 
