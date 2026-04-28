@@ -1,0 +1,211 @@
+        /* --- STYLY PRO FORMULÁŘ (kontakt.html a dalsi) --- */
+
+               * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /* Čisté, moderní bezpatkové písmo */
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa; /* Velmi jemná světle šedá pro clean vzhled */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HLAVIČKA A NAVIGACE (Flexbox) */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Skoro neviditelný stín */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+        h1 {
+            color: #028090; /* Moderní tyrkysová (Teal) */
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+        nav ul {
+            list-style-type: none; 
+            display: flex;
+            gap: 25px; /* Mezery mezi odkazy */
+            flex-wrap: wrap; /* Pro mobily */
+        }
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease-in-out;
+        }
+        nav a:hover {
+            color: #028090;
+        }
+
+        /* HLAVNÍ OBSAH */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* HERO SEKCE (Velký barevný poutač) */
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #028090, #00b4d8); /* Moderní přechod */
+            color: white;
+            padding: 80px 20px;
+            border-radius: 16px; /* Měkké rohy */
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(2, 128, 144, 0.2);
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* SEKCE S KARTAMI (Proč vybrat nás) */
+        section h3 {
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        /* Jednotlivá karta (využití tagu <article>) */
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            width: calc(33.333% - 30px);
+            min-width: 280px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04); /* Clean stín */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Efekt zvednutí po najetí myši */
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .card h4 {
+            font-size: 1.25rem;
+            color: #028090;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* PATIČKA */
+        footer {
+            background-color: #212529;
+            color: #adb5bd;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+.form-section {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Jemný stín jako u karet */
+    max-width: 600px;
+    margin: 0 auto; /* Vycentrování formuláře */
+}
+
+.modern-form fieldset {
+    border: none; /* Odstranění ošklivého defaultního rámečku */
+    padding: 0;
+}
+
+.modern-form legend {
+    font-size: 1.2rem;
+    color: #028090;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Srovná label a input pod sebe */
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Kulaté rohy */
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background-color: #fcfcfc;
+}
+
+/* Modrý rámeček, když na pole uživatel klikne */
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #028090;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.submit-btn {
+    background-color: #028090;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+    background-color: #005f73;
+}
+
+.submit-btn:active {
+    transform: scale(0.98); /* Efekt zmáčknutí tlačítka */
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Cestovatelský Plánovač</title>
+    <link rel="stylesheet" href="../css/kontakt.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Cestovatelský Plánovač</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="o-nas.html">O nás</a></li>
+                    <li><a href="destinace.html">Destinace</a></li>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="cenik.html">Ceník</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="bezpecnost.html">Bezpečnost</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2 style="text-align: center; margin-bottom: 10px; color: #222;">Kontaktujte nás</h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #666;">Máte dotaz nebo si chcete objednat itinerář na míru? Vyplňte formulář níže.</p>
+
+            <form action="#" method="post" class="modern-form">
+                <fieldset>
+                    <legend>Vaše údaje a dotaz</legend>
+                    
+                    <div class="form-group">
+                        <label for="jmeno">Jméno a příjmení:</label>
+                        <input type="text" id="jmeno" name="jmeno" required placeholder="Např. Jan Novák">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailová adresa:</label>
+                        <input type="email" id="email" name="email" required placeholder="jan@novak.cz">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destinace">Vysněná destinace:</label>
+                        <select id="destinace" name="destinace">
+                            <option value="evropa">Evropa (Itálie, Francie, Španělsko...)</option>
+                            <option value="asie">Asie (Japonsko, Thajsko, Vietnam...)</option>
+                            <option value="amerika">Amerika (USA, Kanada...)</option>
+                            <option value="jine">Zatím nevím / Jiné</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zprava">Vaše zpráva:</label>
+                        <textarea id="zprava" name="zprava" rows="5" required placeholder="Napište nám, kam byste rádi vyrazili..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Odeslat zprávu</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cestovatelský Plánovač. Vytvořeno pro školní projekt.</p>
+    </footer>
+
+</body>
+</html>
