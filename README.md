@@ -2,17 +2,31 @@
 
 **Autor:** Matěj Toman 
 
-## 2. Mapa stránek
-Projekt se skládá z 11 `.html` souborů (Hlavní stránka + 10 podstránek).
+## 📁 Adresářová struktura
 
-1.  **`index.html` (Home)** – Úvodní strana s uvítáním a rozcestníkem.
-2.  **`o-nas.html` (O nás)** – Představení týmu a vize projektu.
-3.  **`kontakt.html` (Kontakt)** – Stránka obsahující povinný interaktivní formulář pro dotazy.
-4.  **`blog.html` (Blog)** – Hlavní rozcestník pro články s ukázkami.
-5.  **`clanek1.html` (Článek 1)** – Ukázka článku: "Jak si sbalit do příručního zavazadla".
-6.  **`clanek2.html` (Článek 2)** – Ukázka článku: "5 tipů na levné letenky".
-7.  **`destinace.html` (Destinace)** – Přehled doporučených míst k návštěvě (využití obrázků a popisků).
-8.  **`sluzby.html` (Služby)** – Detailní popis toho, s čím plánovač pomáhá.
-9.  **`cenik.html` (Ceník)** – Tabulkový přehled cenových balíčků.
-10. **`faq.html` (FAQ)** – Často kladené dotazy (řešené specifickým definičním seznamem).
-11. **`vybaveni.html` (Vybavení)** – Co si brát sebou na cesty
+Projekt je striktně rozdělen do logických složek pro zachování přehlednosti a čistoty kódu:
+
+```text
+📁 webSWA/
+ ├── 📁 css/                  # Modulární styly pro jednotlivé podstránky
+ │    ├── style.css           # Globální reset, typografie, menu a patička
+ │    ├── kontakt.css         # Styly pro kontaktní formulář
+ │    ├── cenik.css           # Styly pro tabulku s ceníkem
+ │    ├── o-nas.css           # Styly pro mřížku týmu
+ │    ├── bezpecnost.css      # Styly pro faktický článek o bezpečnosti
+ │    ├── blog.css            # Styly pro rozcestník článků (karty)
+ │    ├── clanek.css          # Styly pro detail textového článku
+ │    └── destinace.css       # Styly pro galerii destinací (figure/figcaption)
+ ├── 📁 img/                  # Složka pro multimediální obsah (obrázky)
+ │    └── kridlo.png
+ ├── 📄 index.html            # Hlavní úvodní strana (Hero sekce, rozcestník)
+ ├── 📄 o-nas.html            # Představení vize a týmu projektu
+ ├── 📄 destinace.html        # Přehled doporučených lokalit
+ ├── 📄 sluzby.html           # Detailní rozpis nabízených služeb s číslováním
+ ├── 📄 cenik.html            # Sémantická tabulka s cenovými balíčky
+ ├── 📄 blog.html             # Rozcestník pro cestovatelské články
+ ├── 📄 clanek1.html          # Článek: Jak si sbalit do příručního zavazadla
+ ├── 📄 clanek2.html          # Článek: 5 zaručených způsobů na levné letenky
+ ├── 📄 bezpecnost.html       # Čistě faktická stránka o bezpečnosti na cestách
+ ├── 📄 kontakt.php           # Kontaktní stránka s HTML5 formulářem směřujícím na PHP
+ └── 📄 zpracovani.php        # PHP skript pro bezpečné přijetí a výpis dat z formuláře
