@@ -1,32 +1,41 @@
 # Cestovatelský Plánovač
 
-**Autor:** Matěj Toman 
+**Autor:** Matěj Toman
 
-## 📁 Adresářová struktura
+## 📁 Kompletní adresářová struktura
 
-Projekt je striktně rozdělen do logických složek pro zachování přehlednosti a čistoty kódu:
+Projekt je rozdělen do tří hlavních kořenových složek, což zajišťuje maximální přehlednost a čistotu správy zdrojových kódů:
 
 ```text
 📁 webSWA/
- ├── 📁 css/                  # Modulární styly pro jednotlivé podstránky
- │    ├── style.css           # Globální reset, typografie, menu a patička
- │    ├── kontakt.css         # Styly pro kontaktní formulář
- │    ├── cenik.css           # Styly pro tabulku s ceníkem
- │    ├── o-nas.css           # Styly pro mřížku týmu
- │    ├── bezpecnost.css      # Styly pro faktický článek o bezpečnosti
+ ├── 📁 css/                  # Složka se specifickými styly pro podstránky
+ │    ├── bezpecnost.css      # Vzhled faktické stránky o bezpečnosti
  │    ├── blog.css            # Styly pro rozcestník článků (karty)
- │    ├── clanek.css          # Styly pro detail textového článku
- │    └── destinace.css       # Styly pro galerii destinací (figure/figcaption)
- ├── 📁 img/                  # Složka pro multimediální obsah (obrázky)
- │    └── kridlo.png
- ├── 📄 index.html            # Hlavní úvodní strana (Hero sekce, rozcestník)
- ├── 📄 o-nas.html            # Představení vize a týmu projektu
- ├── 📄 destinace.html        # Přehled doporučených lokalit
- ├── 📄 sluzby.html           # Detailní rozpis nabízených služeb s číslováním
- ├── 📄 cenik.html            # Sémantická tabulka s cenovými balíčky
- ├── 📄 blog.html             # Rozcestník pro cestovatelské články
- ├── 📄 clanek1.html          # Článek: Jak si sbalit do příručního zavazadla
- ├── 📄 clanek2.html          # Článek: 5 zaručených způsobů na levné letenky
- ├── 📄 bezpecnost.html       # Čistě faktická stránka o bezpečnosti na cestách
- ├── 📄 kontakt.php           # Kontaktní stránka s HTML5 formulářem směřujícím na PHP
- └── 📄 zpracovani.php        # PHP skript pro bezpečné přijetí a výpis dat z formuláře
+ │    ├── cenik.css           # Styly pro sémantickou tabulku
+ │    ├── clanek.css          # Vzhled detailu blogových článků
+ │    ├── destinace.css       # Styly pro mřížku destinací (figure/figcaption)
+ │    ├── index.css           # Úvodní strana (Hero sekce, propagační karty)
+ │    ├── kontakt.css         # Styly pro rozložení kontaktního formuláře
+ │    ├── onas.css            # Styly pro představení týmu a vize
+ │    └── sluzby.css          # Vzhled očíslovaných služeb (kruhy)
+ ├── 📁 img/                  # Složka s multimediálními assety webu
+ │    ├── bali.png            # Fotografie chrámu na Bali
+ │    ├── kjoto.jpg           # Fotografie pagody v Kjótu (JPEG)
+ │    ├── kompas.jpg          # Historický kompas (JPEG)
+ │    ├── kridlo.png          # Křídlo letadla pro hrdinské sekce
+ │    ├── molo.png            # Molo u jezera
+ │    ├── most.png            # Seinský most v Paříži
+ │    ├── newyork.png         # Times Square v New Yorku
+ │    └── voda.png            # Krabice s pitnou vodou u hor
+ └── 📁 html/                 # Složka obsahující kompletní aplikační logiku a stránky
+      ├── bezpecnost.html     # Čistě faktická stránka o pravidlech na cestách
+      ├── blog.html           # Přehledový rozcestník článků s kartami
+      ├── cenik.html          # Stránka s tabulkovým přehledem služeb
+      ├── clanek1.html        # Článek: Jak si sbalit do příručního zavazadla
+      ├── clanek2.html        # Článek: 5 zaručených způsobů na levné letenky
+      ├── destinace.html      # Výpis lokalit s popisy
+      ├── index.html          # Hlavní vstupní bod webu
+      ├── kontakt.html        # Kontaktní stránka s interaktivním formulářem
+      ├── onas.html           # Stránka o příběhu a poslání projektu
+      ├── sluzby.html         # Přehled pomoci s cestováním
+      └── zpracovani.php      # PHP skript pro bezpečné zpracování a výpis POST dat
